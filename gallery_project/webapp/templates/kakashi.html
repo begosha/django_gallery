@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Naruto Gallery</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/v5.11.1/css/free.min.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">NARUTO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/kakashi-slider.jpg' %}" class="d-block w-100" alt="Slider pix">
+
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/kakashi-slider.jpg' %}" class="d-block w-100" alt="Slider pix">
+
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/kakashi-slider.jpg' %}" class="d-block w-100" alt="Slider pix">
+
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <img src="{% static 'images/slider-arrow-left.png' %}" alt="arrow left">
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="sr-only">Next</span>
+      <img src="{% static 'images/slider-arrow-right.png' %}" alt="arrow left">
+    </a>
+  </div>
+  <div class="services-block">
+    <div class="container">
+      <div class="services-info text-center">
+        <h3>kakashi hatake</h3>
+          <img src="{% static 'images/kakashi-1.jpg' %}" class="d-block w-100 h-auto mt-5" alt="">
+          <p>Since his early childhood, Kakashi was very independent and self-confident, at times even appearing arrogant and condescending. Despite that, Kakashi was very perceptive and intuitive, quickly realising the situation for what it was. After his father's death, Kakashi became more stern, aloof and cold toward others, following all the rules to the letter, chastising any who disobeyed them and being willing to abandon his comrades to finish missions.
+
+As an adult, Kakashi typically has a relaxed and almost bored attitude, not prone to getting too worked up about anything or by anyone. Despite his increasingly growing reputation and prowess as a ninja, Kakashi has shown no signs of arrogance, and is rather modest about his abilities. He is habitually tardy, showing up when it suits him, using excuses that convince nobody, and later leaving for equally poor reasons. Though Kakashi wants others to believe this is how he always acts, he only does so for matters that aren't of particular importance.
+
+In truth, Kakashi is rather a solitary and matter-of-fact person. Kakashi is still just as apathetic as he was during his youth, often speaking bluntly about sensitive topics and occasionally ignores his fellow classmates, whenever he passed by them. He is alone for most of his spare time, spending hours visiting Rin Nohara's grave or the Memorial Stone where Obito Uchiha's name is engraved. He tells them about his life, recent events in Konoha, and others they knew, but mostly he shares his regrets that they cannot be with him or that their deaths were his fault. In the anime, after Rin died, Kakashi went through a period of post-traumatic stress disorder, having nightmares about her death and growing depressed whenever others mentioned her. Over time, Kakashi comes to accept that Rin chose to die, so his guilt instead became more about his broken promise to Obito to keep Rin safe. This fact causes Obito's apparent death to weigh more heavily on him, compounding the regret he feels about what his personality was even hours before Obito seemingly died. Kakashi feels that, had he cared about teamwork and friendship in the same way that Obito did, Obito's "death" might have been avoided. Thinking it would ease his pain, Minato convinced Kakashi to join the Anbu. During his time in the Anbu however, Kakashi gained a reputation for his cold-bloodedness.</p>
+          <a href="/" class = "btn">GO BACK</a>
+      </div>
+    </div>
+  </div>
+
+        <footer>
+    <div class="container pt-1 pb-1 mt-5 text-uppercase">
+        <span>© Gosha</span>
+        <span>2021</span>
+    </div>
+  </footer>
+  <script src="{% static 'js/jquery-3.5.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/btn.js' %}"></script>
+</body>
+</html>
